@@ -267,8 +267,6 @@ Los issues deben mantenerse actualizados. Si cambian las condiciones, el estado 
 - **Evitar duplicados:**
 Antes de crear un nuevo issue, se recomienda realizar una búsqueda para comprobar si el asunto ya ha sido reportado. Evitar duplicados ayuda a concentrar la discusión y evita dispersión de esfuerzos.
 
-##a Actividad práctica
-
 ## Actividad práctica: Gestión colaborativa de Issues
 
 ### Objetivo
