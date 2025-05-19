@@ -1,0 +1,362 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="aca-012025-taller-03"
+                  title=""
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción al concepto de Issues" duration="0">
+        <h2 is-upgraded>1.1 ¿Qué es un issue en GitHub?</h2>
+<p>En GitHub, un issue representa una entrada de seguimiento dentro de un repositorio. Se utiliza como una herramienta para documentar y gestionar tareas, errores, ideas o solicitudes relacionadas con el proyecto. Cada issue contiene un título, una descripción y puede incluir etiquetas, comentarios, asignaciones, referencias al código y más.</p>
+<p>Su funcionamiento es similar al de un ticket en un sistema de soporte: se crea cuando se detecta o se plantea algo que debe abordarse, y permanece abierto hasta que se resuelve y se cierra.</p>
+<h2 is-upgraded>1.2 Un issue no siempre es un problema</h2>
+<p>Aunque comúnmente se asocia el término issue con un error3. 3.</p>
+<h2 is-upgraded>1.3 ¿Para qué se usa?</h2>
+<p>Los issues se emplean para diversos fines dentro del desarrollo de software y la gestión de proyectos. Entre los usos más comunes se encuentran los siguientes:</p>
+<ul>
+<li>Reporte de errores (bugs) detectados en el sistema</li>
+<li>Registro de tareas pendientes por implementar</li>
+<li>Propuestas de mejora en funcionalidades existentes</li>
+<li>Solicitudes de nuevas características</li>
+<li>Anotaciones de problemas relacionados con la documentación</li>
+<li>Discusión de decisiones técnicas o estratégicas</li>
+</ul>
+<p>Gracias a su versatilidad, los issues permiten mantener centralizada la información relevante sobre el estado y evolución de un proyecto.</p>
+<h2 is-upgraded>1.4 Ventajas de su uso en un equipo</h2>
+<p>La utilización sistemática de issues ofrece múltiples beneficios en contextos colaborativos, entre los cuales se destacan:</p>
+<ul>
+<li>Mejora la comunicación entre los miembros del equipo</li>
+<li>Facilita el seguimiento de tareas y responsabilidades</li>
+<li>Aumenta la transparencia sobre el estado del proyecto</li>
+<li>Permite organizar el trabajo de forma más eficiente</li>
+<li>Proporciona un historial consultable de decisiones y problemas abordados</li>
+<li>Favorece la vinculación entre código y gestión del proyecto</li>
+</ul>
+<p>Además, GitHub permite relacionar directamente los issues con commits o pull requests, lo cual fortalece la trazabilidad entre el trabajo realizado y los objetivos planteados.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Exploración del panel de Issues en GitHub" duration="0">
+        <p>El panel de issues en GitHub constituye el espacio principal desde el cual se gestionan todos los asuntos registrados dentro de un repositorio. A través de esta interfaz es posible visualizar, filtrar, clasificar y actualizar los issues según su estado y características.</p>
+<p>A continuación, se describen los elementos fundamentales que componen dicho panel.</p>
+<h2 is-upgraded>2.1 Acceso al panel de Issues</h2>
+<p>El panel de issues se encuentra en la parte superior de cualquier repositorio público o privado, dentro de la pestaña identificada como &#34;Issues&#34;. Al hacer clic en dicha pestaña, se mostrará una lista con todos los issues existentes en el repositorio.</p>
+<h2 is-upgraded>2.2 Visualización general</h2>
+<p>La vista principal del panel presenta los issues en formato de lista. Cada entrada incluye un título, un número identificador precedido por <code>#</code>, el nombre del autor, la fecha de creación y el estado (abierto o cerrado). También se muestran etiquetas (labels) si han sido aplicadas, así como posibles asignaciones y hitos (milestones).</p>
+<h2 is-upgraded>2.3 Filtros y búsqueda</h2>
+<p>En la parte superior del listado se encuentra una barra de búsqueda que permite filtrar los issues según diversos criterios:</p>
+<ul>
+<li>Estado: abiertos (<code>is:open</code>) o cerrados (<code>is:closed</code>)</li>
+<li>Autor (<code>author:nombre_usuario</code>)</li>
+<li>Responsable asignado (<code>assignee:nombre_usuario</code>)</li>
+<li>Etiquetas específicas (<code>label:etiqueta</code>)</li>
+<li>Contenido por palabras clave</li>
+</ul>
+<p>Esta funcionalidad permite localizar rápidamente issues relevantes dentro de un repositorio con gran volumen de entradas.</p>
+<h2 is-upgraded>2.4 Clasificación y organización</h2>
+<p>Además de los filtros, GitHub permite organizar los issues mediante:</p>
+<ul>
+<li><strong>Etiquetas (labels):</strong> Categorías visuales que ayudan a identificar el tipo de issue (por ejemplo, <code>bug</code>, <code>enhancement</code>, <code>question</code>).</li>
+<li><strong>Asignaciones (assignees):</strong> Usuarios responsables de atender el issue.</li>
+<li><strong>Hitos (milestones):</strong> Agrupaciones por versión o fase del proyecto.</li>
+<li><strong>Proyectos (projects):</strong> Tableros de trabajo tipo kanban donde se visualiza el avance de los issues según su estado.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de un issue" duration="0">
+        <p>El proceso de creación de un issue en GitHub permite registrar formalmente una tarea, error, propuesta o inquietud dentro del repositorio. Esta acción constituye el primer paso para garantizar su seguimiento y resolución por parte del equipo.</p>
+<p>Para que un issue sea útil, debe estar redactado de forma clara, estructurada y contener la información necesaria para su comprensión y atención.</p>
+<h2 is-upgraded>3.1 Título del issue</h2>
+<p>El título debe resumir de forma precisa el propósito del issue. Se recomienda utilizar una redacción breve, pero suficientemente descriptiva, que permita identificar el contenido sin necesidad de abrir la entrada completa.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>&#34;Error al guardar formularios con campos vacíos&#34;</li>
+<li>&#34;Propuesta de mejora en el sistema de autenticación&#34;</li>
+<li>&#34;Agregar validaciones al formulario de contacto&#34;</li>
+</ul>
+<h2 is-upgraded>3.2 Cuerpo del issue</h2>
+<p>El cuerpo constituye el espacio principal para detallar el contenido. Puede redactarse de forma libre o estructurada, aunque se recomienda seguir un formato que incluya los siguientes elementos:</p>
+<ul>
+<li><strong>Contexto:</strong> Descripción general del entorno o módulo en el que se ha detectado o se desea aplicar el cambio.</li>
+<li><strong>Descripción detallada:</strong> Explicación clara del problema, tarea o sugerencia.</li>
+<li><strong>Pasos para reproducir (en caso de errores):</strong> Secuencia necesaria para replicar el comportamiento observado.</li>
+<li><strong>Resultado actual vs. resultado esperado:</strong> Comparación que permite evidenciar el desvío o justificar la necesidad del cambio.</li>
+<li><strong>Evidencia complementaria:</strong> Capturas de pantalla, fragmentos de código o enlaces útiles.</li>
+</ul>
+<h2 is-upgraded>3.3 Asignación de responsables (Assignees)</h2>
+<p>GitHub permite asignar uno o más usuarios como responsables del issue. Esta asignación facilita la distribución del trabajo y deja constancia de quién está encargado de resolver el asunto.</p>
+<h2 is-upgraded>3.4 Aplicación de etiquetas (Labels)</h2>
+<p>Las etiquetas permiten clasificar el issue según su naturaleza. Algunas etiquetas comunes incluyen:</p>
+<ul>
+<li><code>bug</code>: indica un error o mal funcionamiento</li>
+<li><code>enhancement</code>: sugiere una mejora</li>
+<li><code>question</code>: plantea una duda</li>
+<li><code>documentation</code>: se refiere a contenido escrito del proyecto</li>
+</ul>
+<p>La utilización coherente de etiquetas facilita la navegación y el filtrado posterior.</p>
+<h2 is-upgraded>3.5 Asociación a hitos (<em>Milestones</em>)</h2>
+<p>Los hitos permiten agrupar issues relacionados con una versión específica del proyecto, una fase de trabajo o una fecha de entrega. Esta funcionalidad resulta útil para planificar y visualizar el avance del desarrollo en etapas.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Seguimiento y trabajo con issues" duration="0">
+        <p>Una vez creado un issue, comienza el proceso de seguimiento y colaboración para resolverlo o completarlo. GitHub proporciona diversas funcionalidades que permiten gestionar esta actividad de manera eficiente, registrando cada intervención y facilitando la colaboración entre los miembros del equipo.</p>
+<h2 is-upgraded>4.1 Comentarios y discusión</h2>
+<p>Dentro de cada issue, se dispone de un espacio para comentarios. En este apartado se puede:</p>
+<ul>
+<li>Discutir detalles técnicos o funcionales relacionados con el issue</li>
+<li>Proponer soluciones y alternativas</li>
+<li>Compartir enlaces o evidencia adicional</li>
+<li>Hacer preguntas o aclaraciones</li>
+</ul>
+<p>Cada comentario queda registrado con fecha, hora y autor, lo que permite reconstruir el historial completo de la conversación.</p>
+<h2 is-upgraded>4.2 Referencias a código y otros elementos</h2>
+<p>GitHub permite vincular un issue con otros elementos del repositorio mediante menciones. Estas referencias se hacen utilizando el símbolo <code>#</code> seguido del número del issue, pull request o commit correspondiente.</p>
+<p>Ejemplos:</p>
+<ul>
+<li><code>Relacionado con #12</code></li>
+<li><code>Soluciona #45</code></li>
+<li><code>Ver commit 9d3a1b7</code></li>
+</ul>
+<p>Estas referencias ayudan a establecer conexiones claras entre el issue y el trabajo realizado en el código fuente.</p>
+<h2 is-upgraded>4.3 Tareas dentro de un issue</h2>
+<p>Cuando un issue contiene varias subtareas, se puede incluir una lista de verificación (checklist) utilizando la siguiente sintaxis en Markdown:</p>
+<pre><code>- [ ] Validar los campos del formulario
+- [ ] Implementar el mensaje de error
+- [ ] Escribir pruebas unitarias
+</code></pre>
+<p>Una vez completada una tarea, puede marcarse como hecha (<code>- [x]</code>). Esto permite llevar un control visual del avance dentro del mismo issue.</p>
+<h2 is-upgraded>4.4 Cambios de estado</h2>
+<p>Un issue puede encontrarse en uno de los siguientes estados:</p>
+<ul>
+<li><strong>Abierto:</strong> aún no ha sido resuelto o está en proceso.</li>
+<li><strong>Cerrado:</strong> ha sido resuelto satisfactoriamente o se ha descartado.</li>
+</ul>
+<p>El estado puede actualizarse manualmente desde la interfaz de GitHub, o bien automáticamente al completar una pull request que lo referencie con expresiones como:</p>
+<ul>
+<li><code>Closes #10</code></li>
+<li><code>Fixes #8</code></li>
+<li><code>Resolves #15</code></li>
+</ul>
+<p>Este cierre automático asegura que el seguimiento quede correctamente documentado.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Cierre de issues" duration="0">
+        <p>El cierre de un issue representa el momento en que la tarea, problema o solicitud planteada ha sido resuelta o atendida de manera satisfactoria. Esta acción marca formalmente la conclusión del seguimiento dentro del repositorio y contribuye a mantener actualizado el estado del proyecto.</p>
+<h2 is-upgraded>5.1 Cierre manual</h2>
+<p>Un issue puede cerrarse manualmente desde la interfaz de GitHub. Para ello, se debe acceder al issue correspondiente y hacer clic en el botón &#34;<strong>Close issue</strong>&#34; ubicado al final de la conversación. Esta opción es adecuada cuando la solución se ha implementado directamente o cuando se desea archivar un issue por decisión del equipo.</p>
+<h2 is-upgraded>5.2 Cierre automático mediante pull request</h2>
+<p>GitHub permite automatizar el cierre de issues cuando se integran soluciones mediante pull requests. Para ello, dentro del mensaje del commit o de la descripción del pull request, se incluye una expresión como:</p>
+<pre><code>Closes #12
+Fixes #7
+Resolves #5
+</code></pre>
+<p>Al fusionar el pull request que contiene dicha expresión, el issue correspondiente será cerrado automáticamente. Esta funcionalidad mejora la trazabilidad entre el código y la gestión de tareas.</p>
+<h2 is-upgraded>5.3 Reapertura de un issue</h2>
+<p>En caso de que un issue haya sido cerrado por error, o que el problema persista tras su aparente resolución, es posible reabrirlo. Para ello, se utiliza el botón &#34;<strong>Reopen issue</strong>&#34;, visible en la parte inferior de un issue cerrado.</p>
+<p>Esta opción garantiza que ningún asunto quede sin atender en caso de resoluciones prematuras o insuficientes.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Buenas prácticas" duration="0">
+        <p>El uso correcto y coherente de los issues favorece la organización, la eficiencia y la calidad del trabajo colaborativo dentro de un proyecto. A continuación, se describen algunas prácticas recomendadas para asegurar un manejo adecuado de los issues en GitHub.</p>
+<h2 is-upgraded>6.1 Uso de plantillas de issues (Issue Templates)</h2>
+<p>GitHub permite crear plantillas personalizadas para estandarizar la redacción de los issues en un repositorio. Estas plantillas ayudan a que todos los reportes contengan la información mínima necesaria, facilitando su comprensión y posterior resolución.</p>
+<p>Las plantillas se definen mediante archivos en formato Markdown ubicados en la ruta:</p>
+<pre><code>.github/ISSUE_TEMPLATE/
+</code></pre>
+<p>Cada archivo representa una plantilla distinta y puede estar acompañado por un archivo de configuración llamado <code>config.yml</code>.</p>
+<p>Ejemplo de plantilla simple (<code>bug_report.md</code>):</p>
+<pre><code>---
+name: Reporte de error
+about: Reportar un fallo o comportamiento inesperado en el sistema
+---
+
+## Descripción del error
+Describir claramente el problema encontrado.
+
+## Pasos para reproducir
+1. Ir a &#39;...&#39;
+2. Hacer clic en &#39;...&#39;
+3. Observar el resultado
+
+## Resultado esperado
+Describir qué se esperaba que ocurriera.
+
+## Evidencia
+Agregar capturas de pantalla, enlaces o cualquier información relevante.
+</code></pre>
+<p>Ejemplo de plantilla para feature (<code>new_feature.md</code>):</p>
+<pre><code>---
+name: Solicitud de funcionalidad
+about: Proponer una nueva característica o mejora para el proyecto
+title: &#34;[Feature] &#34;
+labels: enhancement
+assignees: 
+---
+
+## Descripción de la funcionalidad
+Describir de forma clara y concisa la nueva funcionalidad que se desea incorporar.
+
+## Justificación
+Explicar por qué esta funcionalidad es necesaria o qué problema resuelve. Incluir cualquier beneficio esperado.
+
+## Propuesta de solución
+Describir cómo se podría implementar esta funcionalidad. Si es posible, incluir una idea general del flujo o cambios requeridos.
+
+## Alternativas consideradas
+Mencionar otras opciones que hayan sido consideradas y explicar por qué no se eligieron.
+
+## Información adicional
+Agregar cualquier otro dato útil, como capturas de pantalla, enlaces de referencia, diagramas o ejemplos relacionados.
+</code></pre>
+<p>Al utilizar plantillas, se logra:</p>
+<ul>
+<li>Reducir omisiones de información importante</li>
+<li>Homogeneizar la redacción de los issues</li>
+<li>Facilitar el trabajo de quienes dan seguimiento</li>
+<li>Agilizar la toma de decisiones</li>
+</ul>
+<p>El uso de plantillas resulta especialmente útil en proyectos colaborativos, abiertos o con múltiples mantenedores.</p>
+<h2 is-upgraded>6.2 Otras buenas prácticas:</h2>
+<ul>
+<li><strong>Etiquetado coherente:</strong> Se recomienda aplicar etiquetas de forma consistente para clasificar los issues. Esto permite filtrar entradas con facilidad y detectar patrones recurrentes, como errores frecuentes o solicitudes comunes.</li>
+<li><strong>Asignación de responsables:</strong> Asignar al menos una persona encargada de cada issue contribuye a evitar ambigüedades sobre quién debe atender el asunto. También permite distribuir adecuadamente la carga de trabajo dentro del equipo.</li>
+<li><strong>Actualización periódica:</strong> Los issues deben mantenerse actualizados. Si cambian las condiciones, el estado del desarrollo o se encuentra una solución alternativa, es importante dejar constancia en los comentarios. Esto permite que toda la información relevante permanezca centralizada.</li>
+<li><strong>Evitar duplicados:</strong> Antes de crear un nuevo issue, se recomienda realizar una búsqueda para comprobar si el asunto ya ha sido reportado. Evitar duplicados ayuda a concentrar la discusión y evita dispersión de esfuerzos.</li>
+</ul>
+<p>##a Actividad práctica</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Actividad práctica: Gestión colaborativa de Issues" duration="0">
+        <h2 is-upgraded>Objetivo</h2>
+<p>El objetivo de esta actividad es poner en práctica el uso correcto de issues en un entorno colaborativo, aplicando las buenas prácticas de documentación, asignación, clasificación, referencia y cierre mediante pull requests, utilizando además convenciones profesionales en el manejo de Git.</p>
+<h2 is-upgraded>Instrucciones</h2>
+<p>Cada estudiante deberá colaborar activamente en un repositorio compartido siguiendo las siguientes indicaciones:</p>
+<h3 is-upgraded>1. Creación de Issues</h3>
+<ul>
+<li>Deberás crear <strong>dos issues</strong> en el repositorio: <ul>
+<li>Un <strong>issue de tipo feature</strong> (nueva funcionalidad).</li>
+<li>Un <strong>issue de tipo bug</strong> (reporte de error).</li>
+</ul>
+</li>
+<li>Cada issue debe estar <strong>correctamente documentado</strong> utilizando las plantillas proporcionadas (<code>new_feature.md</code> y <code>bug_report.md</code>) e incluir: <ul>
+<li>Un título claro y descriptivo.</li>
+<li>Cuerpo estructurado según la plantilla correspondiente.</li>
+<li>Asignación de al menos un <strong>responsable (assignee)</strong>.</li>
+<li>Aplicación de <strong>etiquetas (labels)</strong> acordes (<code>enhancement</code>, <code>bug</code>, etc.).</li>
+<li>Asociación a un <strong>milestone</strong> y a un <strong>project</strong> en el tablero del repositorio.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>2. Participación colaborativa</h3>
+<ul>
+<li>Deberás participar activamente en la <strong>discusión de al menos un issue creado por otro compañero/a</strong>, realizando comentarios significativos que aporten al análisis, propuesta de solución o mejora del issue.</li>
+</ul>
+<h3 is-upgraded>3. Cierre de un issue</h3>
+<ul>
+<li>Deberás <strong>cerrar uno de tus propios issues</strong> (feature o bug) mediante una <strong>pull request que lo cierre automáticamente</strong>, utilizando expresiones como <code>Closes #X</code>, <code>Fixes #Y</code>, etc.</li>
+<li>El <strong>issue que cierres debe haber contado con al menos una participación de otro compañero/a en la discusión</strong>.</li>
+</ul>
+<h3 is-upgraded>4. Entrega final</h3>
+<ul>
+<li>La pull request de cierre deberá incluir un archivo en formato Markdown con la siguiente información: <pre><code language="language-markdown" class="language-markdown">## Información del estudiante
+- Nombre completo: [Nombre]
+- Carné: [Carné]
+
+## Referencias a los Issues
+- Issue de feature: #X
+- Issue de bug: #Y
+- Issue comentado (discusión): #Z
+</code></pre>
+</li>
+</ul>
+<h2 is-upgraded>Criterios de evaluación</h2>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Criterio</p>
+</td><td colspan="1" rowspan="1"><p>Puntos</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Creación correcta del issue de feature</p>
+</td><td colspan="1" rowspan="1"><p>2 pts</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Creación correcta del issue de bug</p>
+</td><td colspan="1" rowspan="1"><p>2 pts</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Uso adecuado de labels, milestone, project y assignee</p>
+</td><td colspan="1" rowspan="1"><p>1 pt</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Participación significativa en un issue ajeno</p>
+</td><td colspan="1" rowspan="1"><p>1 pt</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Pull request que cierra correctamente un issue</p>
+</td><td colspan="1" rowspan="1"><p>2 pts</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Archivo Markdown con información solicitada</p>
+</td><td colspan="1" rowspan="1"><p>1 pt</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Uso de <strong>Conventional Commits</strong> en todos los commits</p>
+</td><td colspan="1" rowspan="1"><p>0.5 pt</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Aplicación de <strong>GitFlow</strong> en el trabajo colaborativo</p>
+</td><td colspan="1" rowspan="1"><p>0.5 pt</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p><strong>Total</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>10</strong></p>
+</td></tr>
+</table>
+<h2 is-upgraded>Consideraciones adicionales</h2>
+<ul>
+<li>Es obligatorio el uso de <strong>conventional commits</strong> para todos los mensajes de commit. Ejemplos: <ul>
+<li><code>feat: agregar autenticación con GitHub</code></li>
+<li><code>fix: corregir validación de formularios</code></li>
+</ul>
+</li>
+<li>El flujo de trabajo debe seguir el modelo <strong>GitFlow</strong>, utilizando ramas como <code>feature/</code>, <code>bugfix/</code>, <code>release/</code>, etc.</li>
+<li>La entrega se considerará incompleta si los issues no cumplen completamente con las estructuras de las plantillas.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

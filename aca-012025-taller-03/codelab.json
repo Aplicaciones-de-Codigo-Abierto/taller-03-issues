@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-05-19T17:36:17-06:00",
+  "id": "aca-012025-taller-03",
+  "duration": 0,
+  "title": "",
+  "authors": "Metzi Aguilar, David Garcia, Erika Paz, Kevin Escobar",
+  "summary": "Taller 3 - Manejo de issues",
+  "source": "tallerManejoIssues.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "git",
+    "versioncontrol",
+    "issues"
+  ],
+  "tags": [],
+  "url": "aca-012025-taller-03"
+}
