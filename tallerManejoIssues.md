@@ -299,7 +299,7 @@ Cada estudiante deberá colaborar activamente en un repositorio compartido sigui
 
 #### 4. Entrega final
 
-- La pull request de cierre deberá incluir un archivo en formato Markdown con la siguiente información:
+- La pull request de cierre deberá incluir un archivo en formato Markdown llamado `PrimerApellido_PrimerNombre.md`con la siguiente información:
   ```markdown
   ## Información del estudiante
   - Nombre completo: [Nombre]
